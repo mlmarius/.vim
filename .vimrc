@@ -1,4 +1,5 @@
 execute pathogen#infect()
+
 syntax on
 filetype plugin indent on
 
@@ -11,8 +12,8 @@ nnoremap <C-right><C-right> $
 vnoremap <C-right><C-right> $
 
 " Fast jump up and down
-nnoremap <C-up><C-up> 10k
-nnoremap <C-down><C-down> 10j
+"nnoremap <C-up><C-up> 10k
+"nnoremap <C-down><C-down> 10j
 
 "Show unprintable characters
 set list                                                " Display unprintable characters f12 - switches
@@ -70,13 +71,18 @@ set laststatus=2	" enable the plugin
 " Plugin: Nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-" Plugin: Python syntax highlighting https://github.com/hdima/python-syntax/
-let python_highlight_all = 1
-
-" Plugin: delimitMate https://github.com/Raimondi/delimitMate
-so ./test/_setup.vim
-"let loaded_delimitMate = 1
-let delimitMate_expand_cr = 1
-
-
-
+" Plugin: delimitMate           https://github.com/vim-scripts/delimitMate.vim
+" let loaded_delimitMate = 0
+let delimitMate_autoclose = 1
+let delimitMate_matchpairs = "(:),[:],{:},<:>"
+let g:delimitMate_expand_space = 1
+let g:delimitMate_expand_cr = 1
+let delimitMate_expand_inside_quotes = 1
+let delimitMate_quotes = "\" ' ` *"
+au FileType python let b:delimitMate_quotes = "\" `"
+au FileType markdown let b:delimitMate_quotes = "\" ` *"
+au FileType tex let b:delimitMate_quotes = "'"
+au BufRead,BufNewFile *.{txt} let b:delimitMate_quotes = "` \""
+let delimitMate_nesting_quotes = ['"','`']
+au FileType python let b:delimitMate_nesting_quotes = ['"']
+let delimitMate_excluded_ft = "mail,txt"
