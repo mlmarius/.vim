@@ -72,3 +72,11 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Plugin: Python syntax highlighting https://github.com/hdima/python-syntax/
 let python_highlight_all = 1
+
+" Plugin: delimitMate https://github.com/Raimondi/delimitMate
+so ./test/_setup.vim
+"let loaded_delimitMate = 1
+let delimitMate_expand_cr = 1
+
+
+

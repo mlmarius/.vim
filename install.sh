@@ -50,3 +50,12 @@ echo "Adding custom .vimrc"
 git clone https://github.com/mlmarius/.vim.git /tmp/vim.customisations
 mv /tmp/vim.customisations/.vimrc ~/.vimrc
 rm -Rf /tmp/vim.customisations
+
+echo "Adding Raimodi/delimitMate"
+git clone https://github.com/Raimondi/delimitMate.git ~/.vim/bundle/delimit-mate
+
+echo "Adding tcomment"
+git clone https://github.com/tomtom/tcomment_vim.git ~/.vim/bundle/tcomment
+
+echo "Adding MRU plugin"
+git clone https://github.com/yegappan/mru.git ~/.vim/bundle/tcomment
