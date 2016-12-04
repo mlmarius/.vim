@@ -58,4 +58,13 @@ echo "Adding tcomment"
 git clone https://github.com/tomtom/tcomment_vim.git ~/.vim/bundle/tcomment
 
 echo "Adding MRU plugin"
-git clone https://github.com/yegappan/mru.git ~/.vim/bundle/tcomment
+git clone https://github.com/yegappan/mru.git ~/.vim/bundle/mru
+
+
+# Plugin Command-T https://github.com/wincent/command-t  !! verry nice fuzzy finder but requires ruby
+
+echo "Adding SnipMate"
+cd ~/.vim/bundle
+git clone https://github.com/tomtom/tlib_vim.git
+git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
+git clone https://github.com/garbas/vim-snipmate.git

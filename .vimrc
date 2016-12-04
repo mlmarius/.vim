@@ -86,3 +86,25 @@ au BufRead,BufNewFile *.{txt} let b:delimitMate_quotes = "` \""
 let delimitMate_nesting_quotes = ['"','`']
 au FileType python let b:delimitMate_nesting_quotes = ['"']
 let delimitMate_excluded_ft = "mail,txt"
+
+
+
+" following lines from https://gist.github.com/gglanzani/3435030
+let delimitMate_autoclose = 1
+let delimitMate_matchpairs = "(:),[:],{:},<:>"
+let delimitMate_expand_space = 0
+let delimitMate_quotes = "\" ' ` *"
+au FileType python let b:delimitMate_quotes = "\" `"
+au FileType markdown let b:delimitMate_quotes = "\" ` *"
+au FileType tex let b:delimitMate_quotes = "'"
+au BufRead,BufNewFile *.{txt} let b:delimitMate_quotes = "` \""
+let delimitMate_nesting_quotes = ['"','`']
+au FileType python let b:delimitMate_nesting_quotes = ['"']
+let delimitMate_excluded_ft = "mail,txt"
+
+" Plugin MRU https://github.com/yegappan/mru  docs: http://www.vim.org/scripts/script.php?script_id=521
+let MRU_Use_Current_Window = 1
+" Make MRU easy to open
+noremap <leader>m <ESC>:MRU<CR>
+
+" Plugin Command-T https://github.com/wincent/command-t  !! requires ruby
