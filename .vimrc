@@ -69,3 +69,6 @@ set laststatus=2	" enable the plugin
 
 " Plugin: Nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+" Plugin: Python syntax highlighting https://github.com/hdima/python-syntax/
+let python_highlight_all = 1
