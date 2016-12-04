@@ -68,3 +68,12 @@ cd ~/.vim/bundle
 git clone https://github.com/tomtom/tlib_vim.git
 git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
 git clone https://github.com/garbas/vim-snipmate.git
+
+# Copy some snippets
+git clone https://github.com/honza/vim-snippets.git
+git clone https://github.com/rbonvall/snipmate-snippets-bib 
+git clone https://github.com/sudar/vim-arduino-snippets 
+git clone https://github.com/zedr/zope-snipmate-bundle.git 
+git clone https://github.com/bonsaiben/bootstrap-snippets 
+git clone https://github.com/sniphpets 
+
