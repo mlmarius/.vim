@@ -55,7 +55,7 @@ nmap <C-right> <C-w>l
 
 
 " Theme selection
-set background=dark             " options: dark | light
+set background=light            " options: dark | light
 set t_Co=256
 colorscheme PaperColor          " https://github.com/NLKNguyen/papercolor-theme
 
@@ -70,9 +70,12 @@ set laststatus=2	" enable the plugin
 
 " Plugin: Nerdtree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
 
 " Plugin: delimitMate           https://github.com/vim-scripts/delimitMate.vim
 " let loaded_delimitMate = 0
+let mapleader=","
 let delimitMate_autoclose = 1
 let delimitMate_matchpairs = "(:),[:],{:},<:>"
 let g:delimitMate_expand_space = 1
